@@ -1,10 +1,10 @@
 //
-//  Copyright © 2018 Aleksander Zubala. All rights reserved.
+// Copyright (c) 2018 Aleksander Zubala. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface TestClass : NSObject
+@protocol TestProtocol <NSObject>
 
 - (void)doSomethingNoArguments;
 

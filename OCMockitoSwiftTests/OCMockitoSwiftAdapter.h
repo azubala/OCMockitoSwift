@@ -4,13 +4,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface OCMockitoSwift : NSObject
+@interface OCMockitoSwiftAdapter : NSObject
 
 + (id)mock:(Class)class;
 + (id)mockProtocol:(Protocol *)protocol;
 
-+ (void)verify:(id)mock selector:(SEL)selector;
 + (void)verify:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments;
+
++ (void)given:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments willReturn:(id)returnValue;
++ (void)given:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments willReturnBool:(BOOL)returnValue;
++ (void)given:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments willReturnInt:(NSInteger)returnValue;
+
 
 /*
 TODO
@@ -19,7 +23,11 @@ TODO
  - stubbing
  - return values
  - argument matchers
+ - protocol mock support
+ - class mock support
 
  * */
+
+
 
 @end

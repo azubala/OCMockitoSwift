@@ -18,4 +18,9 @@
     NSLog(@"Hello: %ld", integer);
 }
 
+- (NSString *)returnObjectMethodNoArguments {
+    return @"Hello World!";
+}
+
+
 @end

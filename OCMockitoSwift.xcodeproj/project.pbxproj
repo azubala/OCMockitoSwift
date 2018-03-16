@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510431D5EB41792C8482085B /* OCMockito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51043437926F7F0189A54633 /* OCMockito.swift */; };
 		51043583ACAD17D9E6DA2806 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043520823DF0D894E120B9 /* TestClass.m */; };
 		51043BD6B8AB4C8DAA972390 /* ObjectiveCException.m in Sources */ = {isa = PBXBuildFile; fileRef = 510436DA0961B97FF4B9AEC6 /* ObjectiveCException.m */; };
 		56998A81E545E2204A12143B /* Pods_OCMockitoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DC88A118090CCEA3571AFE /* Pods_OCMockitoSwift.framework */; };
@@ -17,7 +18,7 @@
 		943E3DBD2059045F00A142B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943E3DBB2059045F00A142B1 /* LaunchScreen.storyboard */; };
 		943E3DC02059045F00A142B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 943E3DBF2059045F00A142B1 /* main.m */; };
 		943E3DCD205904E000A142B1 /* OCMockitoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943E3DCC205904E000A142B1 /* OCMockitoSwiftTests.swift */; };
-		943E3DD72059079400A142B1 /* OCMockitoSwift.m in Sources */ = {isa = PBXBuildFile; fileRef = 943E3DD62059079400A142B1 /* OCMockitoSwift.m */; };
+		943E3DD72059079400A142B1 /* OCMockitoSwiftAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 943E3DD62059079400A142B1 /* OCMockitoSwiftAdapter.m */; };
 		D96EA546BCDDC714C548FD81 /* Pods_OCMockitoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E435DEB7AEB2C6A486A35E8E /* Pods_OCMockitoSwiftTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +35,9 @@
 /* Begin PBXFileReference section */
 		1B7586734A650F123DAC512E /* Pods-OCMockitoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCMockitoSwift/Pods-OCMockitoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		4D1F9AEE90C3E73F8A177D86 /* Pods-OCMockitoSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCMockitoSwiftTests/Pods-OCMockitoSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		51043437926F7F0189A54633 /* OCMockito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCMockito.swift; sourceTree = "<group>"; };
 		51043520823DF0D894E120B9 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		5104366D8FDE02BB4B7AD691 /* TestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProtocol.h; sourceTree = "<group>"; };
 		510436DA0961B97FF4B9AEC6 /* ObjectiveCException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCException.m; sourceTree = "<group>"; };
 		510439D7E79A75B54073E553 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
 		51043AF4CFEFF479F78E3F8F /* ObjectiveCException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveCException.h; sourceTree = "<group>"; };
@@ -53,8 +56,8 @@
 		943E3DCC205904E000A142B1 /* OCMockitoSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCMockitoSwiftTests.swift; sourceTree = "<group>"; };
 		943E3DCE205904E000A142B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		943E3DD42059079400A142B1 /* OCMockitoSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCMockitoSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		943E3DD52059079400A142B1 /* OCMockitoSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMockitoSwift.h; sourceTree = "<group>"; };
-		943E3DD62059079400A142B1 /* OCMockitoSwift.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMockitoSwift.m; sourceTree = "<group>"; };
+		943E3DD52059079400A142B1 /* OCMockitoSwiftAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMockitoSwiftAdapter.h; sourceTree = "<group>"; };
+		943E3DD62059079400A142B1 /* OCMockitoSwiftAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMockitoSwiftAdapter.m; sourceTree = "<group>"; };
 		95DC88A118090CCEA3571AFE /* Pods_OCMockitoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCMockitoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12D69502623D9E98E707B49 /* Pods-OCMockitoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCMockitoSwift/Pods-OCMockitoSwift.release.xcconfig"; sourceTree = "<group>"; };
 		E435DEB7AEB2C6A486A35E8E /* Pods_OCMockitoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCMockitoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +106,7 @@
 			children = (
 				510439D7E79A75B54073E553 /* TestClass.h */,
 				51043520823DF0D894E120B9 /* TestClass.m */,
+				5104366D8FDE02BB4B7AD691 /* TestProtocol.h */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -159,11 +163,12 @@
 			children = (
 				943E3DCC205904E000A142B1 /* OCMockitoSwiftTests.swift */,
 				943E3DCE205904E000A142B1 /* Info.plist */,
-				943E3DD52059079400A142B1 /* OCMockitoSwift.h */,
-				943E3DD62059079400A142B1 /* OCMockitoSwift.m */,
+				943E3DD52059079400A142B1 /* OCMockitoSwiftAdapter.h */,
+				943E3DD62059079400A142B1 /* OCMockitoSwiftAdapter.m */,
 				943E3DD42059079400A142B1 /* OCMockitoSwiftTests-Bridging-Header.h */,
 				51043ECF8F5E7C3E574F61E1 /* Fixtures */,
 				51043817F58A0A9375693754 /* Helpers */,
+				51043437926F7F0189A54633 /* OCMockito.swift */,
 			);
 			path = OCMockitoSwiftTests;
 			sourceTree = "<group>";
@@ -397,9 +402,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				943E3DCD205904E000A142B1 /* OCMockitoSwiftTests.swift in Sources */,
-				943E3DD72059079400A142B1 /* OCMockitoSwift.m in Sources */,
+				943E3DD72059079400A142B1 /* OCMockitoSwiftAdapter.m in Sources */,
 				51043583ACAD17D9E6DA2806 /* TestClass.m in Sources */,
 				51043BD6B8AB4C8DAA972390 /* ObjectiveCException.m in Sources */,
+				510431D5EB41792C8482085B /* OCMockito.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

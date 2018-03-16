@@ -5,6 +5,7 @@ target 'OCMockitoSwift' do
 
   target 'OCMockitoSwiftTests' do
     inherit! :search_paths
+    pod 'OCMockitoSwift', :path => '../'
     pod 'OCMockito'
     pod 'Quick'
     pod 'Nimble'

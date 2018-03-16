@@ -1,5 +1,6 @@
 import Quick
 import Nimble
+import OCMockitoSwift
 
 class OCMockitoSwiftSpec: QuickSpec {
     override func spec() {

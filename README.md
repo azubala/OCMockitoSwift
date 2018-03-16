@@ -81,7 +81,7 @@ given(mock) { (#selector(MyObject.returnSomething(with:)), arguments: ["Foo"], w
 
 ## Author
 
-[Aleksander Zubala](mailto:alek@zubala.com) | [**zubala.com**](http://zubala.comed)
+[Aleksander Zubala](mailto:alek@zubala.com) | [**zubala.com**](http://zubala.com)
 
 ## License
 

@@ -1,8 +1,10 @@
 # OCMockitoSwift
 
-## About
+## Disclaimer
 
-**DISCLAIMER** This library is work in progress, only bare minimum is provided from OCMockito.
+This library is work in progress, only bare minimum is provided from OCMockito.
+
+## About
 
 [**OCMockito**](https://github.com/jonreid/OCMockito) adapter for Swift, that allows to create and operate on mocks which are subclasses for `NSObject`.
 

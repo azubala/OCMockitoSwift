@@ -5,7 +5,7 @@ import OCMockitoSwift
 
 class OCMockitoSwiftSpec: QuickSpec {
     override func spec() {
-        
+
         describe("OCMockitoSwift") {
 
             describe("mocking protocol") {
@@ -66,7 +66,6 @@ class OCMockitoSwiftSpec: QuickSpec {
                                     testMock.doSomething(with: "Bar")
                                 }
                                 it("should NOT throw an exception") {
-                                    var captor = HCArgumentCaptor()
                                     verify(testMock) { (#selector(TestClass.doSomething(with:)), matchers: [0: whatever()]) }
                                 }
                             }
@@ -76,9 +75,9 @@ class OCMockitoSwiftSpec: QuickSpec {
                                     testMock.doSomething(with: "Bar")
                                 }
                                 it("should NOT throw an exception") {
-                                    var captor = HCArgumentCaptor()
+                                    let captor = HCArgumentCaptor()
                                     verify(testMock) { (#selector(TestClass.doSomething(with:)), matchers: [0: captor]) }
-                                    var capturedValue = captor.value as! String
+                                    let capturedValue = captor.value as! String
                                     expect(capturedValue).to(equal("Bar"))
                                 }
                             }
@@ -143,7 +142,7 @@ class OCMockitoSwiftSpec: QuickSpec {
 
 
             }
-            
+
             describe("mocking class") {
                 var testMock: TestClass!
 
@@ -153,7 +152,7 @@ class OCMockitoSwiftSpec: QuickSpec {
                 it("should create mock") {
                     expect(testMock).notTo(beNil())
                 }
-                
+
                 describe("verifying public interface method") {
 
                     context("without arguments") {
@@ -200,7 +199,7 @@ class OCMockitoSwiftSpec: QuickSpec {
                                     capturedError = error
                                 }
                             }
-                            
+
                             it("should throw an exception") {
                                 expect(capturedError).notTo(beNil())
                             }
@@ -290,18 +289,51 @@ class OCMockitoSwiftSpec: QuickSpec {
 
                         context("with no arguments") {
 
-                            var stubbedReturnValue: String?
+                            context("that returns an object") {
+                                var stubbedReturnValue: String?
 
-                            beforeEach {
-                                given(testMock) { (#selector(TestClass.returnObjectMethodNoArguments), willReturn: "Fake Value")}
-                                stubbedReturnValue = testMock.returnObjectMethodNoArguments()
+                                beforeEach {
+                                    given(testMock) { (#selector(TestClass.returnObjectMethodNoArguments), willReturn: "Fake Value")}
+                                    stubbedReturnValue = testMock.returnObjectMethodNoArguments()
+                                }
+
+                                it("should return value from method") {
+                                    expect(stubbedReturnValue).notTo(beNil())
+                                }
+                                it("should return stubbed value") {
+                                    expect(stubbedReturnValue).to(equal("Fake Value"))
+                                }
                             }
 
-                            it("should return value from method") {
-                                expect(stubbedReturnValue).notTo(beNil())
+                            context("that returns an integer") {
+                                var stubbedReturnValue: Int?
+
+                                beforeEach {
+                                    given(testMock) { (#selector(TestClass.returnIntegerMethodNoArguments), willReturnInt: 123)}
+                                    stubbedReturnValue = testMock.returnIntegerMethodNoArguments()
+                                }
+
+                                it("should return value from method") {
+                                    expect(stubbedReturnValue).notTo(beNil())
+                                }
+                                it("should return stubbed value") {
+                                    expect(stubbedReturnValue).to(equal(123))
+                                }
                             }
-                            it("should return stubbed value") {
-                                expect(stubbedReturnValue).to(equal("Fake Value"))
+
+                            context("that returns an option") {
+                                var stubbedReturnValue: TestClassOptions?
+
+                                beforeEach {
+                                    given(testMock) { (#selector(TestClass.returnOptionMethodNoArguments), willReturnUInt: TestClassOptions.foo.rawValue) }
+
+                                    stubbedReturnValue = testMock.returnOptionMethodNoArguments()
+                                }
+
+                                it("should return value from method") {
+                                    expect(stubbedReturnValue).notTo(beNil())
+                                    expect(stubbedReturnValue!.rawValue).to(equal(TestClassOptions.foo.rawValue))
+                                }
                             }
                         }
                     }

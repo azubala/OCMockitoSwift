@@ -22,5 +22,12 @@
     return @"Hello World!";
 }
 
+- (NSInteger)returnIntegerMethodNoArguments {
+    return 42;
+}
+
+- (TestClassOptions)returnOptionMethodNoArguments {
+    return TestClassOptionBar;
+}
 
 @end

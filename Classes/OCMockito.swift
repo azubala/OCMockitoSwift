@@ -65,3 +65,33 @@ public func given(_ mock: Any, closure: () -> (Selector, willReturn: Any)) {
     let (sel, returnValue) = closure()
     OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: [], matchers: [:], willReturn: returnValue)
 }
+
+public func given(_ mock: Any, closure: () -> (Selector, arguments: [Any], willReturnInt: Int)) {
+    let (sel, args, returnValue) = closure()
+    OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: args, matchers: [:], willReturnInt: returnValue)
+}
+
+public func given(_ mock: Any, closure: () -> (Selector, willReturnInt: Int)) {
+    let (sel, returnValue) = closure()
+    OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: [], matchers: [:], willReturnInt: returnValue)
+}
+
+public func given(_ mock: Any, closure: () -> (Selector, arguments: [Any], willReturnUInt: UInt)) {
+    let (sel, args, returnValue) = closure()
+    OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: args, matchers: [:], willReturn: returnValue)
+}
+
+public func given(_ mock: Any, closure: () -> (Selector, willReturnUInt: UInt)) {
+    let (sel, returnValue) = closure()
+    OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: [], matchers: [:], willReturn: returnValue)
+}
+
+public func given(_ mock: Any, closure: () -> (Selector, arguments: [Any], willReturnBool: Bool)) {
+    let (sel, args, returnValue) = closure()
+    OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: args, matchers: [:], willReturn: returnValue)
+}
+
+public func given(_ mock: Any, closure: () -> (Selector, willReturnBool: Bool)) {
+    let (sel, returnValue) = closure()
+    OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: [], matchers: [:], willReturn: returnValue)
+}

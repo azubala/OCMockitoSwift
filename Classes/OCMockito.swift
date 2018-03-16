@@ -32,28 +32,28 @@ public func mock<T>(_ type: T.Type) -> T {
     return OCMockitoSwiftAdapter.mock(classType) as! T
 }
 
-public func mockProtocol(_ type: Protocol) -> Any  {
+public func mockProtocol(_ type: Protocol) -> Any {
     return OCMockitoSwiftAdapter.mockProtocol(type)
 }
 
-public func verify(_ mock: Any, closure: () -> (Selector)) {
+public func verify(_ mock: Any, count: UInt = 1, closure: () -> (Selector)) {
     let selector = closure()
-    OCMockitoSwiftAdapter.verify(mock, selector: selector, arguments: [], matchers: [:])
+    OCMockitoSwiftAdapter.verify(mock, count: count, selector: selector, arguments: [], matchers: [:])
 }
 
-public func verify(_ mock: Any, closure: () -> (Selector, arguments: [Any])) {
+public func verify(_ mock: Any, count: UInt = 1, closure: () -> (Selector, arguments: [Any])) {
     let (sel, arguments) = closure()
-    OCMockitoSwiftAdapter.verify(mock, selector: sel, arguments: arguments, matchers: [:])
+    OCMockitoSwiftAdapter.verify(mock, count: count, selector: sel, arguments: arguments, matchers: [:])
 }
 
-public func verify(_ mock: Any, closure: () -> (Selector, matchers: [Int: Any])) {
+public func verify(_ mock: Any, count: UInt = 1, closure: () -> (Selector, matchers: [Int: Any])) {
     let (sel, matchers) = closure()
-    OCMockitoSwiftAdapter.verify(mock, selector: sel, arguments: [], matchers: matchers)
+    OCMockitoSwiftAdapter.verify(mock, count: count, selector: sel, arguments: [], matchers: matchers)
 }
 
-public func verify(_ mock: Any, closure: () -> (Selector, arguments: [Any], matchers: [Int: Any])) {
+public func verify(_ mock: Any, count: UInt = 1, closure: () -> (Selector, arguments: [Any], matchers: [Int: Any])) {
     let (sel, arguments, matchers) = closure()
-    OCMockitoSwiftAdapter.verify(mock, selector: sel, arguments: arguments, matchers: matchers)
+    OCMockitoSwiftAdapter.verify(mock, count: count, selector: sel, arguments: arguments, matchers: matchers)
 }
 
 public func given(_ mock: Any, closure: () -> (Selector, arguments: [Any], willReturn: Any)) {

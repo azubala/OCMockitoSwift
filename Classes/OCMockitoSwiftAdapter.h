@@ -26,9 +26,14 @@
 + (id)anything;
 
 + (id)mock:(Class)class;
+
 + (id)mockProtocol:(Protocol *)protocol;
 
-+ (void)verify:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments matchers:(NSDictionary *)matchers;
++ (void)verify:(id)mock
+         count:(NSUInteger)executionCount
+      selector:(SEL)selector
+     arguments:(NSArray *)arguments
+      matchers:(NSDictionary *)matchers;
 
 + (void)given:(id)mock
      selector:(SEL)selector

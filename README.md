@@ -41,6 +41,12 @@ verify(mock) { (#selector(MyObject.doSomething(with:)), arguments: ["Foo"]) } //
 
 ```
 
+To verify count of the mock interaction simply use `count` parameter (by default it's set to 1). For example to verify that there were no interactions with mock you can simply call:
+
+```swift
+verify(testMock, count: 0) { #selector(TestClass.doSomethingNoArguments) }
+```
+
 Working with [OCHamcrest](https://github.com/hamcrest/OCHamcrest) matchers:
 
 ```swift

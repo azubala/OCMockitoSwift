@@ -59,8 +59,12 @@ static const char *selectorType = ":";
     return mockProtocol(protocol);
 }
 
-+ (void)verify:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments matchers:(NSDictionary *)matchers {
-    id mocking = verify(mock);
++ (void)verify:(id)mock
+         count:(NSUInteger)executionCount
+      selector:(SEL)selector
+     arguments:(NSArray *)arguments
+      matchers:(NSDictionary *)matchers {
+    id mocking = verifyCount(mock, times(executionCount));
     for (id key in matchers.allKeys) {
         id matcher = matchers[key];
         [mocking withMatcher:matcher forArgument:[key unsignedIntValue]];
@@ -70,6 +74,7 @@ static const char *selectorType = ":";
                                           withArguments:arguments];
     [invocation invoke];
 }
+
 
 + (void)given:(id)mock
      selector:(SEL)selector

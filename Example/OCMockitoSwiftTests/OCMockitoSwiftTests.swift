@@ -167,6 +167,26 @@ class OCMockitoSwiftSpec: QuickSpec {
                             }
                         }
 
+                        context("when there was 1 interaction with mock") {
+                            beforeEach {
+                                testMock.doSomethingNoArguments()
+                            }
+                            it("should NOT throw an exception") {
+                                verify(testMock, count: 1) { #selector(TestClass.doSomethingNoArguments) }
+                            }
+                        }
+
+                        context("when there was 3 interaction with mock") {
+                            beforeEach {
+                                testMock.doSomethingNoArguments()
+                                testMock.doSomethingNoArguments()
+                                testMock.doSomethingNoArguments()
+                            }
+                            it("should NOT throw an exception") {
+                                verify(testMock, count: 3) { #selector(TestClass.doSomethingNoArguments) }
+                            }
+                        }
+
                         context("when there was NO interaction with mock") {
 
                             var capturedError: Error?
@@ -183,6 +203,13 @@ class OCMockitoSwiftSpec: QuickSpec {
                             
                             it("should throw an exception") {
                                 expect(capturedError).notTo(beNil())
+                            }
+                        }
+
+                        context("when there was NO interaction with mock") {
+
+                            it("should verify count 0") {
+                                verify(testMock, count: 0) { #selector(TestClass.doSomethingNoArguments) }
                             }
                         }
                     }

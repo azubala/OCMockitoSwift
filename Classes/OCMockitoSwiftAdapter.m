@@ -40,9 +40,6 @@ static const char *floatType = "f";
 static const char *doubleType = "d";
 static const char *boolType = "bool";
 
-static const char *voidType = "v";
-static const char *objectType = "@";
-static const char *classType = "#";
 static const char *selectorType = ":";
 
 @implementation OCMockitoSwiftAdapter

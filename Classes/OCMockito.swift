@@ -21,6 +21,10 @@
 
 import Foundation
 
+public func whatever() -> Any {
+    return OCMockitoSwiftAdapter.anything()
+}
+
 public func mock<T>(_ type: T.Type) -> T {
     guard let classType = type as? AnyClass else {
         fatalError("Provided type: \(type) is NOT AnyClass!")
@@ -32,22 +36,32 @@ public func mockProtocol(_ type: Protocol) -> Any  {
     return OCMockitoSwiftAdapter.mockProtocol(type)
 }
 
-public func verify(_ mock: Any, closure: () -> (Selector, arguments: [Any])) {
-    let (sel, arguments) = closure()
-    OCMockitoSwiftAdapter.verify(mock, selector: sel, arguments: arguments)
-}
-
 public func verify(_ mock: Any, closure: () -> (Selector)) {
     let selector = closure()
-    OCMockitoSwiftAdapter.verify(mock, selector: selector, arguments: [])
+    OCMockitoSwiftAdapter.verify(mock, selector: selector, arguments: [], matchers: [:])
+}
+
+public func verify(_ mock: Any, closure: () -> (Selector, arguments: [Any])) {
+    let (sel, arguments) = closure()
+    OCMockitoSwiftAdapter.verify(mock, selector: sel, arguments: arguments, matchers: [:])
+}
+
+public func verify(_ mock: Any, closure: () -> (Selector, matchers: [Int: Any])) {
+    let (sel, matchers) = closure()
+    OCMockitoSwiftAdapter.verify(mock, selector: sel, arguments: [], matchers: matchers)
+}
+
+public func verify(_ mock: Any, closure: () -> (Selector, arguments: [Any], matchers: [Int: Any])) {
+    let (sel, arguments, matchers) = closure()
+    OCMockitoSwiftAdapter.verify(mock, selector: sel, arguments: arguments, matchers: matchers)
 }
 
 public func given(_ mock: Any, closure: () -> (Selector, arguments: [Any], willReturn: Any)) {
     let (sel, args, returnValue) = closure()
-    OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: args, willReturn: returnValue)
+    OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: args, matchers: [:], willReturn: returnValue)
 }
 
 public func given(_ mock: Any, closure: () -> (Selector, willReturn: Any)) {
     let (sel, returnValue) = closure()
-    OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: [], willReturn: returnValue)
+    OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: [], matchers: [:], willReturn: returnValue)
 }

@@ -41,9 +41,29 @@ verify(mock) { (#selector(MyObject.doSomething(with:)), arguments: ["Foo"]) } //
 
 ```
 
+Working with [OCHamcrest](https://github.com/hamcrest/OCHamcrest) matchers:
+
+```swift
+
+// provide map of matchers for each argument index; `whatever()` is equivalent of `anything()`
+
+verify(testMock) { (#selector(TestClass.doSomething(with:)), matchers: [0: whatever()]) } 
+
+// Capturing arguments
+
+var captor = HCArgumentCaptor()
+
+verify(testMock) { (#selector(TestClass.doSomething(with:)), matchers: [0: captor]) }
+
+var capturedValue = captor.value as! String
+expect(capturedValue).to(equal("Bar"))
+
+```
+
+
 ### Stubbing mocks
 
-To stub return value of a particula method from mock you use the `given` global funciton:
+To stub return value of a particular method from mock you use the `given` global function:
 
 ```swift
 

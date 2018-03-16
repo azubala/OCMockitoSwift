@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.ios.frameworks = 'Foundation', 'CoreFoundation'
 
   s.dependency  'OCMockito', '~> 5.0.1'
-    
+  s.dependency  'OCHamcrest', '~> 7.0'
+
   s.requires_arc = true
 end

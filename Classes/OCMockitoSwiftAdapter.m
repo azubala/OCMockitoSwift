@@ -20,6 +20,7 @@
 //    THE SOFTWARE.
 
 #import "OCMockitoSwiftAdapter.h"
+#import <OCHamcrest/OCHamcrest.h>
 #import <OCMockito/OCMockito.h>
 
 static const NSUInteger invocationArgumentOffset = 2; //Indices 0 and 1 indicate the hidden arguments self and _cmd, respectively;
@@ -46,6 +47,10 @@ static const char *selectorType = ":";
 
 #pragma mark - Public methods
 
++ (id)anything {
+    return anything();
+}
+
 + (id)mock:(Class)class {
     return mock(class);
 }
@@ -54,15 +59,23 @@ static const char *selectorType = ":";
     return mockProtocol(protocol);
 }
 
-+ (void)verify:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments {
-    verify(mock);
++ (void)verify:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments matchers:(NSDictionary *)matchers {
+    id mocking = verify(mock);
+    for (id key in matchers.allKeys) {
+        id matcher = matchers[key];
+        [mocking withMatcher:matcher forArgument:[key unsignedIntValue]];
+    }
     NSInvocation *invocation = [self invocationFromMock:mock
                                             forSelector:selector
                                           withArguments:arguments];
     [invocation invoke];
 }
 
-+ (void)given:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments willReturn:(id)returnValue {
++ (void)given:(id)mock
+     selector:(SEL)selector
+    arguments:(NSArray *)arguments
+     matchers:(NSDictionary *)matchers
+   willReturn:(id)returnValue {
     NSInvocation *invocation = [self invocationFromMock:mock
                                             forSelector:selector
                                           withArguments:arguments];
@@ -72,7 +85,11 @@ static const char *selectorType = ":";
     [given(invocationReturnValue) willReturn:returnValue];
 }
 
-+ (void)given:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments willReturnInt:(NSInteger)returnValue {
++ (void)given:(id)mock
+     selector:(SEL)selector
+    arguments:(NSArray *)arguments
+     matchers:(NSDictionary *)matchers
+willReturnInt:(NSInteger)returnValue {
     NSInvocation *invocation = [self invocationFromMock:mock
                                             forSelector:selector
                                           withArguments:arguments];
@@ -82,7 +99,11 @@ static const char *selectorType = ":";
     [given(invocationReturnValue) willReturnInt:(int) returnValue];
 }
 
-+ (void)given:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments willReturnBool:(BOOL)returnValue {
++ (void) given:(id)mock
+      selector:(SEL)selector
+     arguments:(NSArray *)arguments
+      matchers:(NSDictionary *)matchers
+willReturnBool:(BOOL)returnValue {
     NSInvocation *invocation = [self invocationFromMock:mock
                                             forSelector:selector
                                           withArguments:arguments];

@@ -1,5 +1,6 @@
 import Quick
 import Nimble
+import OCHamcrest
 import OCMockitoSwift
 
 class OCMockitoSwiftSpec: QuickSpec {
@@ -57,6 +58,28 @@ class OCMockitoSwiftSpec: QuickSpec {
                                 }
                                 it("should NOT throw an exception") {
                                     verify(testMock) { (#selector(TestClass.doSomething(with:)), ["Foo"]) }
+                                }
+                            }
+
+                            context("when there was interaction with mock using anything matcher") {
+                                beforeEach {
+                                    testMock.doSomething(with: "Bar")
+                                }
+                                it("should NOT throw an exception") {
+                                    var captor = HCArgumentCaptor()
+                                    verify(testMock) { (#selector(TestClass.doSomething(with:)), matchers: [0: whatever()]) }
+                                }
+                            }
+
+                            context("when there was interaction with mock using captor matcher") {
+                                beforeEach {
+                                    testMock.doSomething(with: "Bar")
+                                }
+                                it("should NOT throw an exception") {
+                                    var captor = HCArgumentCaptor()
+                                    verify(testMock) { (#selector(TestClass.doSomething(with:)), matchers: [0: captor]) }
+                                    var capturedValue = captor.value as! String
+                                    expect(capturedValue).to(equal("Bar"))
                                 }
                             }
 

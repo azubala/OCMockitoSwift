@@ -23,13 +23,29 @@
 
 @interface OCMockitoSwiftAdapter : NSObject
 
++ (id)anything;
+
 + (id)mock:(Class)class;
 + (id)mockProtocol:(Protocol *)protocol;
 
-+ (void)verify:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments;
++ (void)verify:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments matchers:(NSDictionary *)matchers;
 
-+ (void)given:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments willReturn:(id)returnValue;
-+ (void)given:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments willReturnBool:(BOOL)returnValue;
-+ (void)given:(id)mock selector:(SEL)selector arguments:(NSArray *)arguments willReturnInt:(NSInteger)returnValue;
++ (void)given:(id)mock
+     selector:(SEL)selector
+    arguments:(NSArray *)arguments
+     matchers:(NSDictionary *)matchers
+   willReturn:(id)returnValue;
+
++ (void) given:(id)mock
+      selector:(SEL)selector
+     arguments:(NSArray *)arguments
+      matchers:(NSDictionary *)matchers
+willReturnBool:(BOOL)returnValue;
+
++ (void)given:(id)mock
+     selector:(SEL)selector
+    arguments:(NSArray *)arguments
+     matchers:(NSDictionary *)matchers
+willReturnInt:(NSInteger)returnValue;
 
 @end

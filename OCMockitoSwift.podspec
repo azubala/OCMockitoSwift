@@ -11,12 +11,10 @@ Pod::Spec.new do |s|
   s.license   = { :type => 'MIT', :file => 'LICENSE' }
 
   s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.9'
 
   s.source_files          = "Classes/**/*.{h,m,swift}"
 
   s.ios.frameworks = 'Foundation', 'CoreFoundation'
-  s.osx.frameworks = 'Foundation', 'CoreFoundation'
 
   s.dependency  'OCMockito', '~> 5.0.1'
     

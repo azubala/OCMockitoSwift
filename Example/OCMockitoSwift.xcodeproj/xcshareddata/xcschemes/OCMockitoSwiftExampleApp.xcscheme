@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9401A52420692B1F00BB707A"
-               BuildableName = "OCMockitoSwift.framework"
-               BlueprintName = "OCMockitoSwift"
+               BlueprintIdentifier = "943E3DAC2059045F00A142B1"
+               BuildableName = "OCMockitoSwiftExampleApp.app"
+               BlueprintName = "OCMockitoSwiftExampleApp"
                ReferencedContainer = "container:OCMockitoSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "943E3DC9205904E000A142B1"
+               BuildableName = "OCMockitoSwiftTests.xctest"
+               BlueprintName = "OCMockitoSwiftTests"
+               ReferencedContainer = "container:OCMockitoSwift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "943E3DAC2059045F00A142B1"
+            BuildableName = "OCMockitoSwiftExampleApp.app"
+            BlueprintName = "OCMockitoSwiftExampleApp"
+            ReferencedContainer = "container:OCMockitoSwift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -44,15 +63,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9401A52420692B1F00BB707A"
-            BuildableName = "OCMockitoSwift.framework"
-            BlueprintName = "OCMockitoSwift"
+            BlueprintIdentifier = "943E3DAC2059045F00A142B1"
+            BuildableName = "OCMockitoSwiftExampleApp.app"
+            BlueprintName = "OCMockitoSwiftExampleApp"
             ReferencedContainer = "container:OCMockitoSwift.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -62,15 +82,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9401A52420692B1F00BB707A"
-            BuildableName = "OCMockitoSwift.framework"
-            BlueprintName = "OCMockitoSwift"
+            BlueprintIdentifier = "943E3DAC2059045F00A142B1"
+            BuildableName = "OCMockitoSwiftExampleApp.app"
+            BlueprintName = "OCMockitoSwiftExampleApp"
             ReferencedContainer = "container:OCMockitoSwift.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

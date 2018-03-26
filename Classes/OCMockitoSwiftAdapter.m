@@ -20,8 +20,8 @@
 //    THE SOFTWARE.
 
 #import "OCMockitoSwiftAdapter.h"
-#import <OCHamcrest/OCHamcrest.h>
 #import <OCMockito/OCMockito.h>
+#import <OCHamcrest/OCHamcrest.h>
 
 static const NSUInteger invocationArgumentOffset = 2; //Indices 0 and 1 indicate the hidden arguments self and _cmd, respectively;
 

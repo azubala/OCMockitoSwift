@@ -5,4 +5,4 @@
 #import <OCMockito/OCMockito.h>
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "OCMockitoSwiftAdapter.h"
+#import <OCMockitoSwift/OCMockitoSwiftAdapter.h>

@@ -13,6 +13,24 @@ The adapter comes with two files:
 - `OCMockitoSwiftAdapter.{h,m}` -- Objective-C code to provide Swift friendly interface that allows mocking, veryfing and stubbing
 - `OCMockito.swift` -- set of global functions for Swift, e.g. `mock()` or `verify()`
 
+## Installation
+
+### Cocoapods
+
+Simply add to your `Podfile`:
+
+```
+pod 'OCMockitoSwift', '~> 0.3'
+```
+
+### Carthage
+
+Simply add to your `Cartfile`:
+
+```
+github "azubala/OCMockitoSwift"
+```
+
 ## Examples
 
 ### Creating mocks

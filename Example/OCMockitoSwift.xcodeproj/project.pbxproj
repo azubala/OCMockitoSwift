@@ -15,6 +15,8 @@
 		9401A53B206930B300BB707A /* OCMockito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9401A5362069308700BB707A /* OCMockito.swift */; };
 		9401A5472069358D00BB707A /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9401A5432069347A00BB707A /* OCHamcrest.framework */; };
 		9401A5482069358D00BB707A /* OCMockito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9401A5422069347A00BB707A /* OCMockito.framework */; };
+		9401A55020693BBF00BB707A /* OCMockitoSwiftAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9401A5372069308700BB707A /* OCMockitoSwiftAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9401A55120693BBF00BB707A /* OCMockitoSwift-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 9401A5342069308600BB707A /* OCMockitoSwift-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		943E3DB22059045F00A142B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 943E3DB12059045F00A142B1 /* AppDelegate.m */; };
 		943E3DB52059045F00A142B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 943E3DB42059045F00A142B1 /* ViewController.m */; };
 		943E3DB82059045F00A142B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943E3DB62059045F00A142B1 /* Main.storyboard */; };
@@ -222,6 +224,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9401A55020693BBF00BB707A /* OCMockitoSwiftAdapter.h in Headers */,
+				9401A55120693BBF00BB707A /* OCMockitoSwift-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

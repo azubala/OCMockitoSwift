@@ -12,6 +12,12 @@ typedef NS_OPTIONS(NSUInteger, TestClassOptions) {
 
 @interface TestClass : NSObject
 
++ (void)classMethodNoArguments;
+
++ (void)classMethodWithStringArgument:(NSString *)string;
+
++ (void)classMethodWithIntArgument:(NSUInteger)integer;
+
 - (void)doSomethingNoArguments;
 
 - (void)doSomethingWithString:(NSString *)string;

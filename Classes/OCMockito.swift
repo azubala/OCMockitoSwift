@@ -36,6 +36,10 @@ public func mockProtocol(_ type: Protocol) -> Any {
     return OCMockitoSwiftAdapter.mockProtocol(type)
 }
 
+public func mockClass(_ type: AnyClass) -> Any {
+    return OCMockitoSwiftAdapter.mockClass(type)
+}
+
 public func verify(_ mock: Any, count: UInt = 1, closure: () -> (Selector)) {
     let selector = closure()
     OCMockitoSwiftAdapter.verify(mock, count: count, selector: selector, arguments: [], matchers: [:])

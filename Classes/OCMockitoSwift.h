@@ -19,46 +19,13 @@
 //    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //    THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
 
-@interface OCMockitoSwiftAdapter : NSObject
+#ifndef OCMockitoSwift_h
+#define OCMockitoSwift_h
 
-+ (id)anything;
+#import <OCMockito/OCMockito.h>
+#import <OCHamcrest/OCHamcrest.h>
 
-+ (id)mock:(Class)class;
+#import "OCMockitoSwiftAdapter.h"
 
-+ (id)mockClass:(Class)class;
-
-+ (id)mockProtocol:(Protocol *)protocol;
-
-+ (void)verify:(id)mock
-         count:(NSUInteger)executionCount
-      selector:(SEL)selector
-     arguments:(NSArray *)arguments
-      matchers:(NSDictionary *)matchers;
-
-+ (void)given:(id)mock
-     selector:(SEL)selector
-    arguments:(NSArray *)arguments
-     matchers:(NSDictionary *)matchers
-   willReturn:(id)returnValue;
-
-+ (void) given:(id)mock
-      selector:(SEL)selector
-     arguments:(NSArray *)arguments
-      matchers:(NSDictionary *)matchers
-willReturnBool:(BOOL)returnValue;
-
-+ (void)given:(id)mock
-     selector:(SEL)selector
-    arguments:(NSArray *)arguments
-     matchers:(NSDictionary *)matchers
-willReturnInt:(NSInteger)returnValue;
-
-+ (void) given:(id)mock
-      selector:(SEL)selector
-     arguments:(NSArray *)arguments
-      matchers:(NSDictionary *)matchers
-willReturnUInt:(NSUInteger)returnValue;
-
-@end
+#endif /* OCMockitoSwift_h */

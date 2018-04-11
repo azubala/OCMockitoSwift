@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name      = "OCMockitoSwift"
-  s.version   = "0.3.3"
-  s.swift_version = "3.2"
+  s.version   = "0.4.0"
+  s.swift_version = "4.0"
   s.summary   = "Swift adapter for OCMockito"
   s.description = <<-DESC
         OCMockito adapter for Swift, that allows to create and operate on mocks which are subclasses of NSObject.

@@ -7,6 +7,49 @@ class OCMockitoSwiftSpec: QuickSpec {
     override func spec() {
 
         describe("OCMockitoSwift") {
+            
+            describe("mocking class") {
+                
+                var testMock: TestClass.Type!
+                
+                beforeEach {
+                    testMock = OCMockitoSwiftAdapter.mockClass(TestClass.self) as! TestClass.Type
+                }
+                
+                describe("verifying public interface method") {
+                    
+                    context("without arguments") {
+                        
+                        context("when there was interaction with mock") {
+                            beforeEach {
+                                
+                            }
+                            it("should NOT throw an exception") {
+                                verify(testMock) { #selector(TestClass.classMethodNoArguments) }
+                            }
+                        }
+                        
+                        context("when there was NO interaction with mock") {
+                            
+                            var capturedError: Error?
+                            
+                            beforeEach {
+                                do {
+                                    try ObjectiveCException.catch {
+                                        verify(testMock) { #selector(TestClass.classMethodNoArguments) }
+                                    }
+                                } catch (let error) {
+                                    capturedError = error
+                                }
+                            }
+                            
+                            it("should throw an exception") {
+                                expect(capturedError).notTo(beNil())
+                            }
+                        }
+                    }
+                }
+            }
 
             describe("mocking protocol") {
 

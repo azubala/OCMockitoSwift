@@ -6,6 +6,18 @@
 
 @implementation TestClass
 
++ (void)classMethodNoArguments {
+    NSLog(@"Class Method, Hello world");
+}
+
++ (void)classMethodWithStringArgument:(NSString *)string {
+    NSLog(@"Class Method, Hello: %@", string);
+}
+
++ (void)classMethodWithIntArgument:(NSUInteger)integer {
+    NSLog(@"Class Method, Hello: %ld", integer);
+}
+
 - (void)doSomethingNoArguments {
     NSLog(@"Hello world");
 }

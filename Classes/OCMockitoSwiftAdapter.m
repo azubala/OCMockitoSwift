@@ -55,6 +55,10 @@ static const char *selectorType = ":";
     return mock(class);
 }
 
++ (id)mockClass:(Class)class {
+    return mockClass(class);
+}
+
 + (id)mockProtocol:(Protocol *)protocol {
     return mockProtocol(protocol);
 }

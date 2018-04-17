@@ -5,3 +5,5 @@
 #import "TestClass.h"
 #import "TestProtocol.h"
 #import "ObjectiveCException.h"
+
+#import <OCMockitoSwift/OCMockitoSwift.h>

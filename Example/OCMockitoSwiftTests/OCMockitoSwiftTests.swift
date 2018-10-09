@@ -13,7 +13,7 @@ class OCMockitoSwiftSpec: QuickSpec {
                 var testMock: TestProtocol!
 
                 beforeEach {
-                    testMock = mockProtocol(TestProtocol.self) as! TestProtocol
+                    testMock = OCMockitoSwift.mockProtocol(TestProtocol.self) as? TestProtocol
                 }
 
                 describe("verifying public interface method") {

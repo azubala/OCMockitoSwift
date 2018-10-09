@@ -1,2 +1,2 @@
-github "hamcrest/OCHamcrest" "v7.1.0"
-github "jonreid/OCMockito" "v5.0.1"
+github "hamcrest/OCHamcrest" "v7.1.1"
+github "jonreid/OCMockito" "v5.1.1"

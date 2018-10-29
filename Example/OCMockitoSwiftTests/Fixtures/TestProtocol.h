@@ -12,6 +12,8 @@
 
 - (void)doSomethingWithInt:(NSUInteger)integer;
 
+- (void)doSomethingWithBoolean:(BOOL)boolean;
+
 - (NSString *)returnObjectMethodNoArguments;
 
 @end

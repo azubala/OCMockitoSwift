@@ -18,6 +18,10 @@
     NSLog(@"Hello: %ld", integer);
 }
 
+- (void)doSomethingWithBoolean:(BOOL)boolean {
+    NSLog(@"Hello");
+}
+
 - (NSString *)returnObjectMethodNoArguments {
     return @"Hello World!";
 }

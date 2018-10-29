@@ -18,6 +18,8 @@ typedef NS_OPTIONS(NSUInteger, TestClassOptions) {
 
 - (void)doSomethingWithInt:(NSUInteger)integer;
 
+- (void)doSomethingWithBoolean:(BOOL)boolean;
+
 - (NSString *)returnObjectMethodNoArguments;
 
 - (NSInteger)returnIntegerMethodNoArguments;

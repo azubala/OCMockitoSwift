@@ -39,7 +39,7 @@ static const char *unsignedLongLongType = "Q";
 
 static const char *floatType = "f";
 static const char *doubleType = "d";
-static const char *boolType = "bool";
+static const char *boolType = "B";
 
 static const char *selectorType = ":";
 

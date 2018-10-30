@@ -134,6 +134,17 @@ class OCMockitoSwiftSpec: QuickSpec {
 
                         }
 
+                        context("only boolean") {
+                            context("when there was interaction with mock") {
+                                beforeEach {
+                                    testMock.doSomething(withBoolean: true)
+                                }
+                                it("should NOT throw an exception") {
+                                    verify(testMock) { (#selector(TestClass.doSomething(withBoolean:)), [Bool(true)]) }
+                                }
+                            }
+                        }
+
                         context("mixed: class type and primitives") {
 
                         }

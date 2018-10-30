@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name      = "OCMockitoSwift"
-  s.version   = "0.4.0"
+  s.version   = "0.4.1"
   s.swift_version = "4.2"
   s.summary   = "Swift adapter for OCMockito"
   s.description = <<-DESC

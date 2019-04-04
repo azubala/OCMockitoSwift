@@ -63,8 +63,10 @@ static const char *selectorType = ":";
          count:(NSUInteger)executionCount
       selector:(SEL)selector
      arguments:(NSArray *)arguments
-      matchers:(NSDictionary *)matchers {
-    id mocking = verifyCount(mock, times(executionCount));
+      matchers:(NSDictionary *)matchers
+      fileName:(NSString *)fileName
+    lineNumber:(int)lineNumber {
+    id mocking = MKTVerifyCountWithLocation(mock, times(executionCount), self, fileName.UTF8String, lineNumber);
     for (id key in matchers.allKeys) {
         id matcher = matchers[key];
         [mocking withMatcher:matcher forArgument:[key unsignedIntValue]];

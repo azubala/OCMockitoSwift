@@ -3,7 +3,7 @@ PODS:
   - OCHamcrest (7.0.2)
   - OCMockito (5.0.1):
     - OCHamcrest (~> 7.0)
-  - OCMockitoSwift (0.4.0):
+  - OCMockitoSwift (0.4.1):
     - OCHamcrest (~> 7.0)
     - OCMockito (~> 5.0.1)
   - Quick (1.3.2)
@@ -29,9 +29,9 @@ SPEC CHECKSUMS:
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   OCHamcrest: 706bfbf69a3df55a873bad096014e80e2e8ca93c
   OCMockito: 063837a086c058e764fcd23e771089c1759e7197
-  OCMockitoSwift: e292c378da8c6a52fe36102a539b8efd21a0ed53
+  OCMockitoSwift: 8d0fb2c936bfe64a993bf6c3a252bbe73478526c
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
 
 PODFILE CHECKSUM: bf0ced3f13117cc94de158a68ebe5be7a12db901
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

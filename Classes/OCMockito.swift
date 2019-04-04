@@ -36,24 +36,44 @@ public func mockProtocol(_ type: Protocol) -> Any {
     return OCMockitoSwiftAdapter.mockProtocol(type)
 }
 
-public func verify(_ mock: Any, count: UInt = 1, closure: () -> (Selector)) {
+public func verify(_ mock: Any,
+                   count: UInt = 1,
+                   fileName: String = #file,
+                   lineNumber: Int32 = #line,
+                   closure: () -> (Selector)) {
     let selector = closure()
-    OCMockitoSwiftAdapter.verify(mock, count: count, selector: selector, arguments: [], matchers: [:])
+    OCMockitoSwiftAdapter.verify(mock, count: count, selector: selector, arguments: [], matchers: [:],
+                                 fileName: fileName, lineNumber: lineNumber)
 }
 
-public func verify(_ mock: Any, count: UInt = 1, closure: () -> (Selector, arguments: [Any])) {
+public func verify(_ mock: Any,
+                   count: UInt = 1,
+                   fileName: String = #file,
+                   lineNumber: Int32 = #line,
+                   closure: () -> (Selector, arguments: [Any])) {
     let (sel, arguments) = closure()
-    OCMockitoSwiftAdapter.verify(mock, count: count, selector: sel, arguments: arguments, matchers: [:])
+    OCMockitoSwiftAdapter.verify(mock, count: count, selector: sel, arguments: arguments, matchers: [:],
+                                 fileName: fileName, lineNumber: lineNumber)
 }
 
-public func verify(_ mock: Any, count: UInt = 1, closure: () -> (Selector, matchers: [Int: Any])) {
+public func verify(_ mock: Any,
+                   count: UInt = 1,
+                   fileName: String = #file,
+                   lineNumber: Int32 = #line,
+                   closure: () -> (Selector, matchers: [Int: Any])) {
     let (sel, matchers) = closure()
-    OCMockitoSwiftAdapter.verify(mock, count: count, selector: sel, arguments: [], matchers: matchers)
+    OCMockitoSwiftAdapter.verify(mock, count: count, selector: sel, arguments: [], matchers: matchers,
+                                 fileName: fileName, lineNumber: lineNumber)
 }
 
-public func verify(_ mock: Any, count: UInt = 1, closure: () -> (Selector, arguments: [Any], matchers: [Int: Any])) {
+public func verify(_ mock: Any,
+                   count: UInt = 1,
+                   fileName: String = #file,
+                   lineNumber: Int32 = #line,
+                   closure: () -> (Selector, arguments: [Any], matchers: [Int: Any])) {
     let (sel, arguments, matchers) = closure()
-    OCMockitoSwiftAdapter.verify(mock, count: count, selector: sel, arguments: arguments, matchers: matchers)
+    OCMockitoSwiftAdapter.verify(mock, count: count, selector: sel, arguments: arguments, matchers: matchers,
+                                 fileName: fileName, lineNumber: lineNumber)
 }
 
 public func given(_ mock: Any, closure: () -> (Selector, arguments: [Any], willReturn: Any)) {

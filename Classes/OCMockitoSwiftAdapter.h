@@ -33,7 +33,9 @@
          count:(NSUInteger)executionCount
       selector:(SEL)selector
      arguments:(NSArray *)arguments
-      matchers:(NSDictionary *)matchers;
+      matchers:(NSDictionary *)matchers
+      fileName:(NSString *)fileName
+    lineNumber:(int)lineNumber;
 
 + (void)given:(id)mock
      selector:(SEL)selector

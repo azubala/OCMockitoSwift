@@ -3,18 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		219F4F7BA0A2BAE80C217E43 /* Pods_OCMockitoSwiftExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10721C2B077FAA47D77EDF9B /* Pods_OCMockitoSwiftExampleApp.framework */; };
+		4904D1E725D6C366007B5FAF /* OCHamcrest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4904D1E625D6C366007B5FAF /* OCHamcrest.xcframework */; };
+		4904D1EB25D6C376007B5FAF /* OCMockito.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4904D1EA25D6C376007B5FAF /* OCMockito.xcframework */; };
 		51043583ACAD17D9E6DA2806 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043520823DF0D894E120B9 /* TestClass.m */; };
 		51043BD6B8AB4C8DAA972390 /* ObjectiveCException.m in Sources */ = {isa = PBXBuildFile; fileRef = 510436DA0961B97FF4B9AEC6 /* ObjectiveCException.m */; };
 		8E6A8DF5A2EBCCCDD0401EA5 /* Pods_OCMockitoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456950E42AC15A03CA64D099 /* Pods_OCMockitoSwiftTests.framework */; };
 		9401A53A206930B000BB707A /* OCMockitoSwiftAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9401A5352069308700BB707A /* OCMockitoSwiftAdapter.m */; };
 		9401A53B206930B300BB707A /* OCMockito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9401A5362069308700BB707A /* OCMockito.swift */; };
-		9401A5472069358D00BB707A /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9401A5432069347A00BB707A /* OCHamcrest.framework */; };
-		9401A5482069358D00BB707A /* OCMockito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9401A5422069347A00BB707A /* OCMockito.framework */; };
 		9401A55020693BBF00BB707A /* OCMockitoSwiftAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9401A5372069308700BB707A /* OCMockitoSwiftAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		943E3DB22059045F00A142B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 943E3DB12059045F00A142B1 /* AppDelegate.m */; };
 		943E3DB52059045F00A142B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 943E3DB42059045F00A142B1 /* ViewController.m */; };
@@ -54,6 +54,8 @@
 		19780C4503B40EE56C702A6A /* Pods-OCMockitoSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCMockitoSwiftTests/Pods-OCMockitoSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		456950E42AC15A03CA64D099 /* Pods_OCMockitoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCMockitoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4669C9C04DE40F3ED6298A4B /* Pods-OCMockitoSwiftExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwiftExampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCMockitoSwiftExampleApp/Pods-OCMockitoSwiftExampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		4904D1E625D6C366007B5FAF /* OCHamcrest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCHamcrest.xcframework; path = "../Carthage/Build/OCHamcrest.xcframework"; sourceTree = "<group>"; };
+		4904D1EA25D6C376007B5FAF /* OCMockito.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCMockito.xcframework; path = "../Carthage/Build/OCMockito.xcframework"; sourceTree = "<group>"; };
 		51043520823DF0D894E120B9 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		5104366D8FDE02BB4B7AD691 /* TestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProtocol.h; sourceTree = "<group>"; };
 		510436DA0961B97FF4B9AEC6 /* ObjectiveCException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCException.m; sourceTree = "<group>"; };
@@ -65,8 +67,6 @@
 		9401A5352069308700BB707A /* OCMockitoSwiftAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCMockitoSwiftAdapter.m; path = ../../Classes/OCMockitoSwiftAdapter.m; sourceTree = "<group>"; };
 		9401A5362069308700BB707A /* OCMockito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OCMockito.swift; path = ../../Classes/OCMockito.swift; sourceTree = "<group>"; };
 		9401A5372069308700BB707A /* OCMockitoSwiftAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockitoSwiftAdapter.h; path = ../../Classes/OCMockitoSwiftAdapter.h; sourceTree = "<group>"; };
-		9401A5422069347A00BB707A /* OCMockito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockito.framework; path = ../Carthage/Build/iOS/OCMockito.framework; sourceTree = "<group>"; };
-		9401A5432069347A00BB707A /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = ../Carthage/Build/iOS/OCHamcrest.framework; sourceTree = "<group>"; };
 		943E3DAD2059045F00A142B1 /* OCMockitoSwiftExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCMockitoSwiftExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		943E3DB02059045F00A142B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		943E3DB12059045F00A142B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,8 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9401A5472069358D00BB707A /* OCHamcrest.framework in Frameworks */,
-				9401A5482069358D00BB707A /* OCMockito.framework in Frameworks */,
+				4904D1EB25D6C376007B5FAF /* OCMockito.xcframework in Frameworks */,
+				4904D1E725D6C366007B5FAF /* OCHamcrest.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +117,8 @@
 		4886790906CC8D8A85A0D618 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9401A5432069347A00BB707A /* OCHamcrest.framework */,
-				9401A5422069347A00BB707A /* OCMockito.framework */,
+				4904D1EA25D6C376007B5FAF /* OCMockito.xcframework */,
+				4904D1E625D6C366007B5FAF /* OCHamcrest.xcframework */,
 				10721C2B077FAA47D77EDF9B /* Pods_OCMockitoSwiftExampleApp.framework */,
 				456950E42AC15A03CA64D099 /* Pods_OCMockitoSwiftTests.framework */,
 			);
@@ -240,7 +240,6 @@
 				9401A52120692B1F00BB707A /* Frameworks */,
 				9401A52220692B1F00BB707A /* Headers */,
 				9401A52320692B1F00BB707A /* Resources */,
-				9401A5462069349600BB707A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -402,21 +401,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9401A5462069349600BB707A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/../Carthage/Build/iOS/OCMockito.framework",
-				"$(SRCROOT)/../Carthage/Build/iOS/OCHamcrest.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		C9464108B78624E98EFC43FF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,7 +504,11 @@
 				INFOPLIST_FILE = "${PRODUCT_NAME}/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zubala.OCMockitoSwiftFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -549,11 +537,16 @@
 				INFOPLIST_FILE = "${PRODUCT_NAME}/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zubala.OCMockitoSwiftFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -680,7 +673,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DPE4LURAUZ;
 				INFOPLIST_FILE = OCMockitoSwiftExampleApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thefabulous.OCMockitoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OCMockitoSwiftFramework/OCMockitoSwiftExampleApp-Bridging-Header.h";
@@ -700,7 +696,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DPE4LURAUZ;
 				INFOPLIST_FILE = OCMockitoSwiftExampleApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thefabulous.OCMockitoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OCMockitoSwiftFramework/OCMockitoSwiftExampleApp-Bridging-Header.h";
@@ -719,7 +718,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DPE4LURAUZ;
 				INFOPLIST_FILE = OCMockitoSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thefabulous.OCMockitoSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -740,11 +743,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DPE4LURAUZ;
 				INFOPLIST_FILE = OCMockitoSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thefabulous.OCMockitoSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "OCMockitoSwiftTests/OCMockitoSwiftTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCMockitoSwiftExampleApp.app/OCMockitoSwiftExampleApp";

@@ -1,1 +1,1 @@
-github "jonreid/OCMockito" ~> 5.0
+github "mateuszszklarek/OCMockito" "fix/M1_support"

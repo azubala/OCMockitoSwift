@@ -97,6 +97,14 @@ given(mock) { (#selector(MyObject.returnSomething(with:)), arguments: ["Foo"], w
 
 ```
 
+To stub using closure use `willDo:` parameter:
+
+```swift
+given(testMock) { (#selector(MyObject.returnIntegerMethodNoArguments), willDo: { _ in
+    return 42
+})}
+```
+
 ## Author
 
 [Aleksander Zubala](mailto:alek@zubala.com) | [**zubala.com**](http://zubala.com)

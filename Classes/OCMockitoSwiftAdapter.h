@@ -59,4 +59,10 @@ willReturnInt:(NSInteger)returnValue;
       matchers:(NSDictionary *)matchers
 willReturnUInt:(NSUInteger)returnValue;
 
++ (void) given:(id)mock
+      selector:(SEL)selector
+     arguments:(NSArray *)arguments
+      matchers:(NSDictionary *)matchers
+        willDo:(id (^)( NSArray *))block;
+
 @end

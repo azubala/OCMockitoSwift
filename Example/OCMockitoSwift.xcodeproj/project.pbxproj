@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		219F4F7BA0A2BAE80C217E43 /* Pods_OCMockitoSwiftExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10721C2B077FAA47D77EDF9B /* Pods_OCMockitoSwiftExampleApp.framework */; };
+		1191080B11CD0E5A2987DBAC /* Pods_OCMockitoSwiftExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A712BBAEC133EC6DF6E6A51B /* Pods_OCMockitoSwiftExampleApp.framework */; };
 		4904D1E725D6C366007B5FAF /* OCHamcrest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4904D1E625D6C366007B5FAF /* OCHamcrest.xcframework */; };
 		4904D1EB25D6C376007B5FAF /* OCMockito.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4904D1EA25D6C376007B5FAF /* OCMockito.xcframework */; };
 		51043583ACAD17D9E6DA2806 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043520823DF0D894E120B9 /* TestClass.m */; };
 		51043BD6B8AB4C8DAA972390 /* ObjectiveCException.m in Sources */ = {isa = PBXBuildFile; fileRef = 510436DA0961B97FF4B9AEC6 /* ObjectiveCException.m */; };
-		8E6A8DF5A2EBCCCDD0401EA5 /* Pods_OCMockitoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456950E42AC15A03CA64D099 /* Pods_OCMockitoSwiftTests.framework */; };
 		9401A53A206930B000BB707A /* OCMockitoSwiftAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9401A5352069308700BB707A /* OCMockitoSwiftAdapter.m */; };
 		9401A53B206930B300BB707A /* OCMockito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9401A5362069308700BB707A /* OCMockito.swift */; };
 		9401A55020693BBF00BB707A /* OCMockitoSwiftAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9401A5372069308700BB707A /* OCMockitoSwiftAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +23,7 @@
 		943E3DC02059045F00A142B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 943E3DBF2059045F00A142B1 /* main.m */; };
 		943E3DCD205904E000A142B1 /* OCMockitoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943E3DCC205904E000A142B1 /* OCMockitoSwiftTests.swift */; };
 		94F2D377207E495900408352 /* OCMockitoSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 94F2D376207E495900408352 /* OCMockitoSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0B7478F9A8536049B623F07 /* Pods_OCMockitoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0890D38F94918664ADB557B /* Pods_OCMockitoSwiftTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,18 +50,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		10721C2B077FAA47D77EDF9B /* Pods_OCMockitoSwiftExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCMockitoSwiftExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		19780C4503B40EE56C702A6A /* Pods-OCMockitoSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCMockitoSwiftTests/Pods-OCMockitoSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
-		456950E42AC15A03CA64D099 /* Pods_OCMockitoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCMockitoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4669C9C04DE40F3ED6298A4B /* Pods-OCMockitoSwiftExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwiftExampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCMockitoSwiftExampleApp/Pods-OCMockitoSwiftExampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		4904D1E625D6C366007B5FAF /* OCHamcrest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCHamcrest.xcframework; path = "../Carthage/Build/OCHamcrest.xcframework"; sourceTree = "<group>"; };
-		4904D1EA25D6C376007B5FAF /* OCMockito.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCMockito.xcframework; path = "../Carthage/Build/OCMockito.xcframework"; sourceTree = "<group>"; };
+		4904D1E625D6C366007B5FAF /* OCHamcrest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCHamcrest.xcframework; path = ../Carthage/Build/OCHamcrest.xcframework; sourceTree = "<group>"; };
+		4904D1EA25D6C376007B5FAF /* OCMockito.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCMockito.xcframework; path = ../Carthage/Build/OCMockito.xcframework; sourceTree = "<group>"; };
 		51043520823DF0D894E120B9 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		5104366D8FDE02BB4B7AD691 /* TestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProtocol.h; sourceTree = "<group>"; };
 		510436DA0961B97FF4B9AEC6 /* ObjectiveCException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCException.m; sourceTree = "<group>"; };
 		510439D7E79A75B54073E553 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
 		51043AF4CFEFF479F78E3F8F /* ObjectiveCException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveCException.h; sourceTree = "<group>"; };
-		57D8FDC942867FB65248FDFE /* Pods-OCMockitoSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCMockitoSwiftTests/Pods-OCMockitoSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59D39A342834D363E1BA06EF /* Pods-OCMockitoSwiftExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwiftExampleApp.debug.xcconfig"; path = "Target Support Files/Pods-OCMockitoSwiftExampleApp/Pods-OCMockitoSwiftExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9401A52520692B1F00BB707A /* OCMockitoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCMockitoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9401A52820692B1F00BB707A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9401A5352069308700BB707A /* OCMockitoSwiftAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCMockitoSwiftAdapter.m; path = ../../Classes/OCMockitoSwiftAdapter.m; sourceTree = "<group>"; };
@@ -82,7 +78,11 @@
 		943E3DCE205904E000A142B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		943E3DD42059079400A142B1 /* OCMockitoSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCMockitoSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		94F2D376207E495900408352 /* OCMockitoSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockitoSwift.h; path = ../../Classes/OCMockitoSwift.h; sourceTree = "<group>"; };
-		B270B3D369A9099E97D5F974 /* Pods-OCMockitoSwiftExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwiftExampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCMockitoSwiftExampleApp/Pods-OCMockitoSwiftExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A0890D38F94918664ADB557B /* Pods_OCMockitoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCMockitoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21A805B49FFB981C5B63B16 /* Pods-OCMockitoSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-OCMockitoSwiftTests/Pods-OCMockitoSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		A712BBAEC133EC6DF6E6A51B /* Pods_OCMockitoSwiftExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCMockitoSwiftExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC53BB16733C4FD8964720A8 /* Pods-OCMockitoSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-OCMockitoSwiftTests/Pods-OCMockitoSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE6B98FE1F4C56EEDA53D778 /* Pods-OCMockitoSwiftExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMockitoSwiftExampleApp.release.xcconfig"; path = "Target Support Files/Pods-OCMockitoSwiftExampleApp/Pods-OCMockitoSwiftExampleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				219F4F7BA0A2BAE80C217E43 /* Pods_OCMockitoSwiftExampleApp.framework in Frameworks */,
+				1191080B11CD0E5A2987DBAC /* Pods_OCMockitoSwiftExampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,20 +107,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E6A8DF5A2EBCCCDD0401EA5 /* Pods_OCMockitoSwiftTests.framework in Frameworks */,
+				E0B7478F9A8536049B623F07 /* Pods_OCMockitoSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130854A420ECBBA78B36023C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59D39A342834D363E1BA06EF /* Pods-OCMockitoSwiftExampleApp.debug.xcconfig */,
+				FE6B98FE1F4C56EEDA53D778 /* Pods-OCMockitoSwiftExampleApp.release.xcconfig */,
+				DC53BB16733C4FD8964720A8 /* Pods-OCMockitoSwiftTests.debug.xcconfig */,
+				A21A805B49FFB981C5B63B16 /* Pods-OCMockitoSwiftTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4886790906CC8D8A85A0D618 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				4904D1EA25D6C376007B5FAF /* OCMockito.xcframework */,
 				4904D1E625D6C366007B5FAF /* OCHamcrest.xcframework */,
-				10721C2B077FAA47D77EDF9B /* Pods_OCMockitoSwiftExampleApp.framework */,
-				456950E42AC15A03CA64D099 /* Pods_OCMockitoSwiftTests.framework */,
+				A712BBAEC133EC6DF6E6A51B /* Pods_OCMockitoSwiftExampleApp.framework */,
+				A0890D38F94918664ADB557B /* Pods_OCMockitoSwiftTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,8 +175,8 @@
 				943E3DCB205904E000A142B1 /* OCMockitoSwiftTests */,
 				9401A52620692B1F00BB707A /* OCMockitoSwift */,
 				943E3DAE2059045F00A142B1 /* Products */,
-				B8F9D4D5D2D05FCC84B4B8C0 /* Pods */,
 				4886790906CC8D8A85A0D618 /* Frameworks */,
+				130854A420ECBBA78B36023C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,17 +218,6 @@
 			path = OCMockitoSwiftTests;
 			sourceTree = "<group>";
 		};
-		B8F9D4D5D2D05FCC84B4B8C0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B270B3D369A9099E97D5F974 /* Pods-OCMockitoSwiftExampleApp.debug.xcconfig */,
-				4669C9C04DE40F3ED6298A4B /* Pods-OCMockitoSwiftExampleApp.release.xcconfig */,
-				57D8FDC942867FB65248FDFE /* Pods-OCMockitoSwiftTests.debug.xcconfig */,
-				19780C4503B40EE56C702A6A /* Pods-OCMockitoSwiftTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -254,7 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 943E3DC32059045F00A142B1 /* Build configuration list for PBXNativeTarget "OCMockitoSwiftExampleApp" */;
 			buildPhases = (
-				114011E0001AD110EA3F3545 /* [CP] Check Pods Manifest.lock */,
+				50A9B58413D130652BFDB887 /* [CP] Check Pods Manifest.lock */,
 				943E3DA92059045F00A142B1 /* Sources */,
 				943E3DAA2059045F00A142B1 /* Frameworks */,
 				943E3DAB2059045F00A142B1 /* Resources */,
@@ -273,11 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 943E3DD3205904E000A142B1 /* Build configuration list for PBXNativeTarget "OCMockitoSwiftTests" */;
 			buildPhases = (
-				5488EE55220280B82EB337FB /* [CP] Check Pods Manifest.lock */,
+				1CB0F2D4FAB297248ECA1D16 /* [CP] Check Pods Manifest.lock */,
 				943E3DC6205904E000A142B1 /* Sources */,
 				943E3DC7205904E000A142B1 /* Frameworks */,
 				943E3DC8205904E000A142B1 /* Resources */,
-				C9464108B78624E98EFC43FF /* [CP] Embed Pods Frameworks */,
+				1CAB1EBD7159CB9D8F1CDAB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,7 +297,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "Aleksander Zubala";
 				TargetAttributes = {
 					9401A52420692B1F00BB707A = {
@@ -365,49 +366,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		114011E0001AD110EA3F3545 /* [CP] Check Pods Manifest.lock */ = {
+		1CAB1EBD7159CB9D8F1CDAB3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OCMockitoSwiftExampleApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5488EE55220280B82EB337FB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OCMockitoSwiftTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C9464108B78624E98EFC43FF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OCMockitoSwiftTests/Pods-OCMockitoSwiftTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-OCMockitoSwiftTests/Pods-OCMockitoSwiftTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/OCHamcrest/OCHamcrest.framework",
 				"${BUILT_PRODUCTS_DIR}/OCMockito/OCMockito.framework",
@@ -424,7 +389,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCMockitoSwiftTests/Pods-OCMockitoSwiftTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCMockitoSwiftTests/Pods-OCMockitoSwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CB0F2D4FAB297248ECA1D16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCMockitoSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50A9B58413D130652BFDB887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCMockitoSwiftExampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -503,7 +512,7 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				INFOPLIST_FILE = "${PRODUCT_NAME}/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -536,7 +545,7 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				INFOPLIST_FILE = "${PRODUCT_NAME}/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -580,6 +589,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -605,7 +615,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -637,6 +647,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -656,7 +667,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -666,7 +677,7 @@
 		};
 		943E3DC42059045F00A142B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B270B3D369A9099E97D5F974 /* Pods-OCMockitoSwiftExampleApp.debug.xcconfig */;
+			baseConfigurationReference = 59D39A342834D363E1BA06EF /* Pods-OCMockitoSwiftExampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -689,7 +700,7 @@
 		};
 		943E3DC52059045F00A142B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4669C9C04DE40F3ED6298A4B /* Pods-OCMockitoSwiftExampleApp.release.xcconfig */;
+			baseConfigurationReference = FE6B98FE1F4C56EEDA53D778 /* Pods-OCMockitoSwiftExampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -711,7 +722,7 @@
 		};
 		943E3DD1205904E000A142B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57D8FDC942867FB65248FDFE /* Pods-OCMockitoSwiftTests.debug.xcconfig */;
+			baseConfigurationReference = DC53BB16733C4FD8964720A8 /* Pods-OCMockitoSwiftTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -736,7 +747,7 @@
 		};
 		943E3DD2205904E000A142B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19780C4503B40EE56C702A6A /* Pods-OCMockitoSwiftTests.release.xcconfig */;
+			baseConfigurationReference = A21A805B49FFB981C5B63B16 /* Pods-OCMockitoSwiftTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;

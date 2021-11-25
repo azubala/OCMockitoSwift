@@ -95,3 +95,13 @@ public func given(_ mock: Any, closure: () -> (Selector, willReturnBool: Bool)) 
     let (sel, returnValue) = closure()
     OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: [], matchers: [:], willReturn: returnValue)
 }
+
+public func given(_ mock: Any, closure: () -> (Selector, willDo: ([Any]?) -> Any?)) {
+    let (sel, block) = closure()
+    OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: [], matchers: [:], willDo: block)
+}
+
+public func given(_ mock: Any, closure: () -> (Selector, arguments: [Any], willDo: ([Any]?) -> Any?)) {
+    let (sel, args, block) = closure()
+    OCMockitoSwiftAdapter.given(mock, selector: sel, arguments: args, matchers: [:], willDo: block)
+}

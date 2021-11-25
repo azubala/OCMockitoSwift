@@ -34,4 +34,8 @@
     return TestClassOptionBar;
 }
 
+- (NSString *)transformString:(NSString *)string {
+    return string.lowercaseStringx;
+}
+
 @end

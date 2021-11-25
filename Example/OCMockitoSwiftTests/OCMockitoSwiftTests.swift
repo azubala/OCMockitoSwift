@@ -1,6 +1,6 @@
 import Quick
 import Nimble
-import OCHamcrest
+//import OCHamcrest
 import OCMockitoSwift
 
 class OCMockitoSwiftSpec: QuickSpec {
@@ -13,7 +13,7 @@ class OCMockitoSwiftSpec: QuickSpec {
                 var testMock: TestProtocol!
 
                 beforeEach {
-                    testMock = OCMockitoSwift.mockProtocol(TestProtocol.self) as? TestProtocol
+                    testMock = OCMockitoSwiftAdapter.mockProtocol(TestProtocol.self) as? TestProtocol
                 }
 
                 describe("verifying public interface method") {

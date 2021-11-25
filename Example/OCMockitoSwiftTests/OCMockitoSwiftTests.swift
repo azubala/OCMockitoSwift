@@ -1,6 +1,6 @@
 import Quick
 import Nimble
-//import OCHamcrest
+import OCHamcrest
 import OCMockitoSwift
 
 class OCMockitoSwiftSpec: QuickSpec {

@@ -35,7 +35,7 @@
 }
 
 - (NSString *)transformString:(NSString *)string {
-    return string.lowercaseStringx;
+    return string.lowercaseString;
 }
 
 @end

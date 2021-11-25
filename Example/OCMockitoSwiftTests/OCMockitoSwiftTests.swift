@@ -346,6 +346,43 @@ class OCMockitoSwiftSpec: QuickSpec {
                                     expect(stubbedReturnValue!.rawValue).to(equal(TestClassOptions.foo.rawValue))
                                 }
                             }
+
+                            context("that uses block for return") {
+                                var stubbedReturnValues: [Int] = []
+
+                                beforeEach {
+                                    var returnValues = [1, 2]
+                                    given(testMock) { (#selector(TestClass.returnIntegerMethodNoArguments), willDo: { _ in
+                                        return returnValues.removeFirst()
+                                    })}
+                                    stubbedReturnValues.append(testMock.returnIntegerMethodNoArguments())
+                                    stubbedReturnValues.append(testMock.returnIntegerMethodNoArguments())
+                                }
+
+                                it("should return stubbed value") {
+                                    expect(stubbedReturnValues).to(equal([1, 2]))
+                                }
+                            }
+                        }
+
+                        context("with arguments") {
+
+                            context("that uses block for return") {
+                                var stubbedReturnValues: [String] = []
+
+                                beforeEach {
+                                    given(testMock) { (#selector(TestClass.transform), arguments: [anything()], willDo: { arguments in
+                                        let string = arguments![0] as! String
+                                        return string + string
+                                    })}
+                                    stubbedReturnValues.append(testMock.transform("a"))
+                                    stubbedReturnValues.append(testMock.transform("b"))
+                                }
+
+                                it("should square arguments") {
+                                    expect(stubbedReturnValues).to(equal(["aa", "bb"]))
+                                }
+                            }
                         }
                     }
                 }

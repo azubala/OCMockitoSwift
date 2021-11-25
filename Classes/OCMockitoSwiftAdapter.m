@@ -132,6 +132,23 @@ willReturnUInt:(NSUInteger)returnValue {
     [given(invocationReturnValue) willReturnUnsignedInteger:returnValue];
 }
 
++ (void) given:(id)mock
+      selector:(SEL)selector
+     arguments:(NSArray *)arguments
+      matchers:(NSDictionary *)matchers
+        willDo:(id (^)( NSArray *))block {
+    NSInvocation *invocation = [self invocationFromMock:mock
+                                            forSelector:selector
+                                          withArguments:arguments];
+    [invocation invoke];
+    id invocationReturnValue = nil;
+    [invocation getReturnValue:&invocationReturnValue];
+    [given(invocationReturnValue) willDo:^id (NSInvocation *invocation){
+        NSArray *args = [invocation mkt_arguments];
+        return block(args);
+    }];
+}
+
 #pragma mark - Private methods
 
 + (NSInvocation *)invocationFromMock:(id)mock forSelector:(SEL)selector withArguments:(NSArray *)arguments {

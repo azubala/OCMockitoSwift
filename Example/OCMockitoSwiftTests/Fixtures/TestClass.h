@@ -26,4 +26,6 @@ typedef NS_OPTIONS(NSUInteger, TestClassOptions) {
 
 - (TestClassOptions)returnOptionMethodNoArguments;
 
+- (NSString *)transformString:(NSString *)string;
+
 @end

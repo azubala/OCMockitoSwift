@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name      = "OCMockitoSwift"
-  s.version   = "0.6.0"
+  s.version   = "0.6.1"
   s.swift_version = "4.2"
   s.summary   = "Swift adapter for OCMockito"
   s.description = <<-DESC
@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
 
   s.ios.frameworks = 'Foundation', 'CoreFoundation'
 
-  s.dependency  'OCMockito', '~> 5.0.1'
-  s.dependency  'OCHamcrest', '~> 7.0'
+  s.dependency  'OCMockito', '~> 7.0.0'
+  s.dependency  'OCHamcrest', '~> 7.2'
 
   s.requires_arc = true
 end

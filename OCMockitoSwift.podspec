@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name      = "OCMockitoSwift"
-  s.version   = "0.6.1"
+  s.version   = "0.7.0"
   s.swift_version = "4.2"
   s.summary   = "Swift adapter for OCMockito"
   s.description = <<-DESC
@@ -11,14 +11,14 @@ Pod::Spec.new do |s|
   s.homepage  = "https://github.com/azubala/OCMockitoSwift"
   s.license   = { :type => 'MIT', :file => 'LICENSE' }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files          = "Classes/**/*.{h,m,swift}"
 
   s.ios.frameworks = 'Foundation', 'CoreFoundation'
 
-  s.dependency  'OCMockito', '~> 7.0.0'
-  s.dependency  'OCHamcrest', '~> 7.2'
+  s.dependency  'OCMockito', '~> 6.0.0'
+  s.dependency  'OCHamcrest', '~> 8.0'
 
   s.requires_arc = true
 end

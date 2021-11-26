@@ -1,11 +1,11 @@
 PODS:
   - Nimble (9.2.1)
-  - OCHamcrest (7.0.2)
-  - OCMockito (5.0.1):
-    - OCHamcrest (~> 7.0)
-  - OCMockitoSwift (0.6.0):
-    - OCHamcrest (~> 7.0)
-    - OCMockito (~> 5.0.1)
+  - OCHamcrest (8.0.0)
+  - OCMockito (6.0.0):
+    - OCHamcrest (~> 8.0)
+  - OCMockitoSwift (0.7.0):
+    - OCHamcrest (~> 8.0)
+    - OCMockito (~> 6.0.0)
   - Quick (4.0.0)
 
 DEPENDENCIES:
@@ -15,11 +15,10 @@ DEPENDENCIES:
   - Quick
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - OCHamcrest
-    - OCMockito
   trunk:
     - Nimble
+    - OCHamcrest
+    - OCMockito
     - Quick
 
 EXTERNAL SOURCES:
@@ -28,11 +27,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
-  OCHamcrest: 706bfbf69a3df55a873bad096014e80e2e8ca93c
-  OCMockito: 063837a086c058e764fcd23e771089c1759e7197
-  OCMockitoSwift: 18636801c407188e2d5fbe698480fce4957b44e1
+  OCHamcrest: a613690381f1dac7637c18962c10dbe8feca4bb5
+  OCMockito: 780f04370226f81a9d972c97d1203864ef609f5b
+  OCMockitoSwift: cffae679545a22ebf508a251ac62da7f9762f67b
   Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
 
-PODFILE CHECKSUM: bf0ced3f13117cc94de158a68ebe5be7a12db901
+PODFILE CHECKSUM: 7e408127f74335a3c0283112b3d0721987cb1774
 
 COCOAPODS: 1.11.2

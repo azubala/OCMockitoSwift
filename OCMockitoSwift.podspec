@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name      = "OCMockitoSwift"
-  s.version   = "0.7.0"
+  s.version   = "0.8.0"
   s.swift_version = "4.2"
   s.summary   = "Swift adapter for OCMockito"
   s.description = <<-DESC
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files          = "Classes/**/*.{h,m,swift}"
+  s.source_files          = "Sources/**/*.{h,m,swift}"
 
   s.ios.frameworks = 'Foundation', 'CoreFoundation'
 

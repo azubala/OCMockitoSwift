@@ -31,6 +31,16 @@ Simply add to your `Cartfile`:
 github "azubala/OCMockitoSwift"
 ```
 
+### Swift Package Manager
+
+Add the following to the `dependencies` value of your `Package.swift`:
+
+```
+dependencies: [
+    .package(url: "https://github.com/azubala/OCMockitoSwift", .upToNextMajor(from: 0.8.0"))
+]
+```
+
 ## Examples
 
 ### Creating mocks
